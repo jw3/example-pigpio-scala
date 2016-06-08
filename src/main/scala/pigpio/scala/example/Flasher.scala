@@ -9,7 +9,7 @@ import scala.concurrent.duration.{Duration, DurationInt}
 import scala.util.{Failure, Success}
 
 
-object Boot extends App with LazyLogging {
+object Flasher extends App with LazyLogging {
   implicit val system = ActorSystem("pigpio-example")
   implicit val lpigpio = PigpioLibrary.INSTANCE
 
